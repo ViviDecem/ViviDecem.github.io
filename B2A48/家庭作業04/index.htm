@@ -1,0 +1,45 @@
+<html>
+ <head>
+     <meta charset="UTF-8">
+     <title>家庭作業04</title>
+
+     <style>
+         h4{
+             color: red;
+         }
+         p{
+             margin: 5px;
+         }
+         div{
+             color: blue;
+         }
+         table{
+             border-color: black;
+         }
+         tr{
+             text-align: :left;
+         }
+         td{
+             vertical-align:left;
+         }
+    </style>
+
+  <body>
+   <script>
+      document.write("<p><h4>九九乘法表</h4></p>")
+      document.write('<table border="1" width="40%" cellspacing="0" cellpadding="0">')
+      function cow(nu){
+          for(i=1; i<=nu; i++){
+              document.write("<tr>");
+          for(j=1; j<=nu; j++){
+              document.write("<td><div>" + j+"x"+i + "=" + j*i + " " + "</div></td>");
+          }
+              document.write("</tr>");
+          }
+          document.write("</table>");
+      }
+      cow(9);
+  </script>
+ </body>
+ </head>
+ </html>
