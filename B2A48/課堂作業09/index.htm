@@ -76,7 +76,7 @@
                 newString = newString.substr(reg.lastIndex);
             }
             document.getElementById("demo").innerHTML = text;
-            
+        };
             reader.onerror = (e) =>alert(e.target.error.name);
             reader.readAsText(file);
     });
